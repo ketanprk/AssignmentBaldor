@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".CameraActivity">
+
+
+    <LinearLayout
+            android:id="@+id/cPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ketan.example.com.assignmentidfy.widget.CircleOverlayNearView
+            android:id="@+id/ll_near"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ketan.example.com.assignmentidfy.widget.CircleOverlayNearView>
+
+    <ketan.example.com.assignmentidfy.widget.CircleOverlayFarView
+            android:id="@+id/ll_far"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ketan.example.com.assignmentidfy.widget.CircleOverlayFarView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+        <Button
+                android:id="@+id/btnCam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:text="Capture"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
